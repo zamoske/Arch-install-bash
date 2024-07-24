@@ -163,7 +163,7 @@ EOF
 log_info "Сейчас будет проводиться установка Aur-helper'а yay"
 cat << EOF | arch-chroot /mnt
 su - $USRNAME
-cd /home/kake
+cd /home/$USRNAME
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
